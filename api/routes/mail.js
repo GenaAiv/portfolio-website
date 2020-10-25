@@ -1,22 +1,40 @@
 const express = require('express');
 let router = express.Router();
 const nodemailer = require('nodemailer');
+const { google } = require('googleapis');
+const OAuth2 = google.auth.OAuth2;
 require('dotenv').config();
 
-let transporter = nodemailer.createTransport({
+const oauth2Client = new OAuth2(
+	process.env.OAUTH_CLIENT_ID,
+	process.env.OAUTH_CLIENT_SECRET, // Client Secret
+	'https://developers.google.com/oauthplayground' // Redirect URL
+);
+
+oauth2Client.setCredentials({
+	refresh_token:
+		'1//04zuZB9CENxVmCgYIARAAGAQSNwF-L9IrdHGKSvSKbGmhjcGxX9rZoL6sWJbevend9Co0zcU8NoVLQSrrpi8VG7TArb3_s29pHhg',
+});
+const accessToken = oauth2Client.getAccessToken();
+
+let transport = {
 	host: 'smtp.gmail.com',
-	secure: 'true',
+	secure: true,
 	service: 'gmail',
 	auth: {
 		type: 'OAUTH2',
-		user: process.env.GMAIL_USERNAME,
+		user: process.env.GMAIL_USERNAME, //set these in your .env file
 		clientId: process.env.OAUTH_CLIENT_ID,
 		clientSecret: process.env.OAUTH_CLIENT_SECRET,
 		refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-		accessToken: process.env.OAUTH_ACCESS_TOKEN,
-		expires: 3599,
+		accessToken: accessToken,
 	},
-});
+	tls: {
+		rejectUnauthorized: false,
+	},
+};
+
+let transporter = nodemailer.createTransport(transport);
 
 transporter.verify((error, success) => {
 	if (error) {
