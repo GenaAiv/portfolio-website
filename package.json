@@ -42,8 +42,7 @@
 	},
 	"scripts": {
 		"build": "webpack --mode development",
-		"start": "webpack-dev-server",
-		"deployheroku": "cd api/ && npm run start && cd .. && cd client/ && npm run start"
+		"start": "webpack-dev-server"
 	},
 	"repository": {
 		"type": "git",
