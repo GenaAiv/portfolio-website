@@ -6,6 +6,7 @@
 	"dependencies": {
 		"@babel/plugin-transform-react-jsx": "^7.10.4",
 		"@svgr/webpack": "^5.4.0",
+		"cookie-parser": "^1.4.5",
 		"morgan": "^1.10.0",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
