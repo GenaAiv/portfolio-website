@@ -5,6 +5,7 @@ const nodemailer = require('nodemailer');
 let transport = {
 	host: 'smtp.gmail.com',
 	auth: {
+		type: 'OAUTH2',
 		user: process.env.USER,
 		pass: process.env.PASS,
 	},
