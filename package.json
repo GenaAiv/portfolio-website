@@ -60,7 +60,7 @@
 	},
 	"scripts": {
 		"build": "webpack --mode development",
-		"start": "webpack-dev-server"
+		"start": "cd api/ && npm run start"
 	},
 	"repository": {
 		"type": "git",
