@@ -1,16 +1,22 @@
 const express = require('express');
 let router = express.Router();
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
-let transport = {
+let transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',
+	secure: 'true',
+	service: 'gmail',
 	auth: {
-		user: process.env.USER,
-		pass: process.env.PASS,
+		type: 'OAUTH2',
+		user: process.env.GMAIL_USERNAME, //set these in your .env file
+		clientId: process.env.OAUTH_CLIENT_ID,
+		clientSecret: process.env.OAUTH_CLIENT_SECRET,
+		refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+		accessToken: process.env.OAUTH_ACCESS_TOKEN,
+		expires: 3599,
 	},
-};
-
-let transporter = nodemailer.createTransport(transport);
+});
 
 transporter.verify((error, success) => {
 	if (error) {
