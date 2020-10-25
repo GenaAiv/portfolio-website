@@ -1,1 +1,1 @@
-release: npm run start
+web: cd api/ && npm run start

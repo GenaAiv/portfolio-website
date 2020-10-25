@@ -28,6 +28,7 @@ let transport = {
 		clientSecret: process.env.OAUTH_CLIENT_SECRET,
 		refreshToken: process.env.OAUTH_REFRESH_TOKEN,
 		accessToken: accessToken,
+		expires: 3600,
 	},
 	tls: {
 		rejectUnauthorized: false,
