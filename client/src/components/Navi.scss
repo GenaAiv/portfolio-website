@@ -1,0 +1,42 @@
+.nav-holder {
+	z-index: 100;
+	background-color: rgba(190, 189, 189, 0.185);
+	opacity: 0.9;
+	position: fixed;
+	width: 100%;
+	justify-content: center;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
+	box-shadow: 0 4px 6px -6px #222;
+	nav {
+		display: flex;
+		justify-content: space-around;
+		a {
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 13px 8px;
+			font-size: clamp(8px, 3vw, 16px);
+			margin: auto;
+			font-weight: 700;
+			&:hover {
+				text-decoration: none;
+				color: #9e2078;
+			}
+		}
+	}
+}
+
+.transparent {
+	background: transparent !important;
+}
+
+.hidden {
+	transform: translateY(-50px);
+	transition: transform 1s ease-out;
+}
+
+.active {
+	transform: translateY();
+	transition: transform 1s ease-out;
+}

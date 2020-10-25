@@ -1,0 +1,74 @@
+.floating {
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+.appear {
+	animation-name: appear;
+	animation-duration: 2s;
+	animation-iteration-count: inherit;
+	animation-timing-function: linear;
+}
+
+.home-info {
+	margin: 3px 8px;
+}
+
+@keyframes floating {
+	0% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(0, 15px);
+	}
+	100% {
+		transform: translate(0, -0px);
+	}
+}
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.circle {
+	position: absolute;
+	top: -50px;
+	left: -250px;
+	height: 500px;
+	width: 500px;
+	z-index: -11;
+	background-color: rgba(95, 96, 202, 0.5);
+	border-radius: 50%;
+}
+
+button {
+	border-radius: 24px !important;
+}
+
+@media only screen and (max-width: 600px) {
+	p {
+		font-size: 70% !important;
+		line-height: normal;
+	}
+	h1,
+	h2 {
+		font-size: 24px !important;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.home-info {
+		padding-left: 90px;
+		padding-top: 80px;
+	}
+}

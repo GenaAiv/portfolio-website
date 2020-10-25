@@ -1,0 +1,36 @@
+.Contact {
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	header {
+		margin-top: 30px;
+		max-width: 800px;
+		text-align: center;
+		h1 {
+			font-size: 32px;
+			font-weight: 500;
+			color: white;
+		}
+		h3 {
+			font-size: 28px;
+			font-weight: 300;
+		}
+	}
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 30px;
+	}
+	img {
+		margin-right: 100px;
+		margin-bottom: 50px;
+	}
+	form {
+		width: 350px;
+	}
+}

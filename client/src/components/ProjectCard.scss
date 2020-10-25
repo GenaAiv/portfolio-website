@@ -1,0 +1,24 @@
+.card {
+	padding: 15px;
+}
+.card-body {
+	padding: 2rem 1rem 5px 5px;
+
+	.card-title,
+	.card-text {
+		font-size: 1em;
+	}
+	.btn {
+		text-align: center;
+		vertical-align: middle;
+		margin: auto;
+	}
+	a {
+		font-size: 0.9em;
+	}
+	.button-div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

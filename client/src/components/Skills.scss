@@ -1,0 +1,53 @@
+.focus,
+.focus-in {
+	transition: transform 0.2s;
+}
+
+.focus:hover {
+	transform: scale(1.06);
+}
+
+.focus-in:hover {
+	transform: scale(1.16);
+}
+
+.card {
+	background-color: rgba(95, 96, 202, 0.5);
+	padding: 25px;
+}
+hr {
+	background-color: white;
+}
+
+span:hover {
+	border-bottom: 2px solid rgba(85, 86, 189, 0.5);
+}
+#skills-h2 {
+	margin: auto;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 100;
+	width: fit-content;
+	background-color: rgba(97, 129, 216, 0.445);
+}
+
+@media only screen and (max-width: 600px) {
+	.card {
+		margin: 0 60px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.card {
+		margin: 0 20px;
+	}
+}
+@media only screen and (max-width: 996px) {
+	.focus-in {
+		margin: auto;
+	}
+}
+
+.focus-in a:hover {
+	color: rgba(52, 61, 85, 0.445);
+}
