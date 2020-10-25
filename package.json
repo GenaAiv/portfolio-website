@@ -2,7 +2,7 @@
 	"name": "website",
 	"version": "1.0.0",
 	"description": "",
-	"main": "./client/build/index.js",
+	"main": "./api/app.js",
 	"dependencies": {
 		"@babel/plugin-transform-react-jsx": "^7.10.4",
 		"@svgr/webpack": "^5.4.0",
@@ -47,12 +47,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/GenaAiv/website.git"
+		"url": "git+https://github.com/GenaAiv/portfolio-website"
 	},
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/GenaAiv/website/issues"
+		"url": "https://github.com/GenaAiv/portfolio-website/issues"
 	},
-	"homepage": "https://github.com/GenaAiv/website#readme"
+	"homepage": "https://github.com/GenaAiv/portfolio-website#readme"
 }
