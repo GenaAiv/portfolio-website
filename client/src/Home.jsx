@@ -22,7 +22,7 @@ const Home = () => {
 			>
 				<div className="circle appear"></div>
 				<Row>
-					<Col lg={6} sm={12} order={1}>
+					<Col lg={6} sm={12} md={6} order={1}>
 						<div className="home-info">
 							<h1>
 								Gena <strong>Aivazian</strong>
@@ -37,7 +37,7 @@ const Home = () => {
 							</Button>
 						</div>
 					</Col>
-					<Col lg={6} sm={12} pt={5} order={2}>
+					<Col lg={6} sm={12} md={6} pt={5} order={2}>
 						<div className=" header-img">
 							<img
 								src={imgMyimageexample}

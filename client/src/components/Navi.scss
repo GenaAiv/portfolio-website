@@ -1,7 +1,7 @@
 .nav-holder {
 	z-index: 100;
 	background-color: rgba(190, 189, 189, 0.185);
-	opacity: 0.9;
+	opacity: 1;
 	position: fixed;
 	width: 100%;
 	justify-content: center;
@@ -12,16 +12,27 @@
 		display: flex;
 		justify-content: space-around;
 		a {
+			cursor: pointer;
+			background: transparent;
+			text-transform: uppercase;
+			transition: all 0.3s ease 0s;
 			color: #fff;
 			text-transform: uppercase;
 			text-decoration: none;
 			padding: 13px 8px;
-			font-size: clamp(8px, 3vw, 16px);
+			font-family: 'Karla', sans-serif;
+			font-size: clamp(8px, 3vw, 18px);
 			margin: auto;
-			font-weight: 700;
 			&:hover {
 				text-decoration: none;
-				color: #9e2078;
+				color: #3e67c0ab;
+				font-weight: 700 !important;
+				letter-spacing: 4px;
+				background: none;
+				box-shadow: 0px 8px 8px -8px rgba(0, 0, 0, 0.57);
+				-webkit-box-shadow: 0px 8px 8px -8px rgba(0, 0, 0, 0.57);
+				-moz-box-shadow: 0px 8px 8px -8px rgba(0, 0, 0, 0.57);
+				transition: all 0.3s ease;
 			}
 		}
 	}

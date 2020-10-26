@@ -5,6 +5,10 @@
 		font-family: 'Lobster', cursive;
 		text-align: center;
 		margin: 50px;
+		h1,
+		h4 {
+			font-size: clamp(1rem, 5vw, 2.5rem);
+		}
 	}
 }
 
@@ -13,8 +17,6 @@
 		padding: 20px 15px;
 		margin: auto;
 		.contact-text {
-			font-family: 'Lobster', cursive;
-			text-align: center;
 			margin: 70px 20px 30px 20px;
 		}
 	}

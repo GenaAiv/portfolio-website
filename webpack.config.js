@@ -14,10 +14,6 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.svg$/,
-				use: ['@svgr/webpack'],
-			},
-			{
 				test: /\.module\.s(a|c)ss$/,
 				loader: [
 					isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,

@@ -14,7 +14,7 @@ class Skills extends Component {
 				<CardDeck>
 					<Container>
 						<div className="d-flex justify-content-around row">
-							<div className="col-lg-4 col-md-12">
+							<div className="col-lg-4 col-md-6 col-sm-12">
 								<div className="focus mt-2 mb-2 card">
 									<div className="card-body">
 										<div className="text-center card-title h5">
@@ -99,7 +99,7 @@ class Skills extends Component {
 								</div>
 							</div>
 
-							<div className="col-lg-4 col-md-12">
+							<div className="col-lg-4 col-md-6 col-sm-12">
 								<div className="focus mt-2 mb-2 card">
 									<div className="card-body">
 										<div className="text-center card-title h5">Front End</div>
@@ -220,7 +220,7 @@ class Skills extends Component {
 								</div>
 							</div>
 
-							<div className="col-lg-4 col-md-12">
+							<div className="col-lg-4 col-md-8 col-sm-12">
 								<div className="focus mt-2 mb-2 card">
 									<div className="card-body">
 										<div className="text-center card-title h5">Database</div>

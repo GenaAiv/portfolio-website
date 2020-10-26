@@ -3,6 +3,11 @@
 	transition: transform 0.2s;
 }
 
+.card-deck {
+	margin-right: 0;
+	margin-left: 0;
+}
+
 .focus:hover {
 	transform: scale(1.06);
 }
@@ -19,9 +24,6 @@ hr {
 	background-color: white;
 }
 
-span:hover {
-	border-bottom: 2px solid rgba(85, 86, 189, 0.5);
-}
 #skills-h2 {
 	margin: auto;
 	text-align: center;
@@ -33,13 +35,13 @@ span:hover {
 
 @media only screen and (max-width: 600px) {
 	.card {
-		margin: 0 60px;
+		margin: 0 80px;
 	}
 }
 
 @media only screen and (max-width: 400px) {
 	.card {
-		margin: 0 20px;
+		margin: 0 40px;
 	}
 }
 @media only screen and (max-width: 996px) {
