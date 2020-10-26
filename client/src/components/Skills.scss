@@ -17,7 +17,11 @@
 }
 
 .card {
-	background-color: var(--card);
+	border: none !important;
+	background: transparent;
+	-webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.2);
 	padding: 25px;
 }
 hr {

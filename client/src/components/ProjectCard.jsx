@@ -10,7 +10,7 @@ class ProjectCard extends Component {
 					className="align-items-center"
 					style={{ paddingTop: '25vh' }}
 				>
-					<Row className="justify-content-center">
+					<Row className="justify-content-center project-card">
 						<Card
 							className="focus"
 							lg={4}

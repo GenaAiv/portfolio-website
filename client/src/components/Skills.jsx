@@ -12,7 +12,7 @@ class Skills extends Component {
 					</h2>
 				</div>
 				<CardDeck>
-					<Container>
+					<Container class="skills-card">
 						<div className="d-flex justify-content-around row">
 							<div className="col-lg-4 col-md-6 col-sm-12">
 								<div className="focus mt-2 mb-2 card">
