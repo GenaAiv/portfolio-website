@@ -61,7 +61,8 @@
 	},
 	"scripts": {
 		"build": "webpack --mode development",
-		"start": "cd api/ && npm run start"
+		"start": "cd api/ && npm run start",
+		"go": "webpack-dev-server --open"
 	},
 	"repository": {
 		"type": "git",

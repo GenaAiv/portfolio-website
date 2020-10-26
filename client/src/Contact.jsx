@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import axios from 'axios';
-import messageLogo from './assets/message.svg';
 import './Contact.scss';
 
 class Contact extends Component {
@@ -22,55 +22,67 @@ class Contact extends Component {
 
 	render() {
 		return (
-			<div className="Contact">
-				<header>
-					<h1>Like what you see?</h1>
-					<h4>Feel free to drop me a message</h4>
-				</header>
-				<div className="container">
-					<img src={messageLogo}></img>
-					<form
-						id="contact-form"
-						onSubmit={this.handleSubmit.bind(this)}
-						method="POST"
-					>
-						<div className="form-group">
-							<label for="name">Name</label>
-							<input
-								type="text"
-								className="form-control"
-								id="name"
-								value={this.state.name}
-								onChange={this.onNameChange.bind(this)}
-							/>
+			<Container className="contact-styles">
+				<Row>
+					<Col sm={12} md={12} lg={12}>
+						<div className="contact-text">
+							<h1>Like what you see?</h1>
+							<h4>Feel free to drop me a message</h4>
 						</div>
-						<div className="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input
-								type="email"
-								className="form-control"
-								id="email"
-								aria-describedby="emailHelp"
-								value={this.state.email}
-								onChange={this.onEmailChange.bind(this)}
-							/>
-						</div>
-						<div className="form-group">
-							<label for="message">Message</label>
-							<textarea
-								className="form-control"
-								rows="5"
-								id="message"
-								value={this.state.message}
-								onChange={this.onMessageChange.bind(this)}
-							></textarea>
-						</div>
-						<button type="submit" className="btn btn-primary">
-							Submit
-						</button>
-					</form>
-				</div>
-			</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col sm={12} md={6} lg={6}>
+						<Image
+							src={require('./assets/message.png')}
+							className="floating"
+							fluid
+						></Image>
+					</Col>
+					<Col sm={12} md={6} lg={6}>
+						<form
+							id="contact-form"
+							onSubmit={this.handleSubmit.bind(this)}
+							method="POST"
+						>
+							<div className="form-group">
+								<label for="name">Name</label>
+								<input
+									type="text"
+									className="form-control"
+									id="name"
+									value={this.state.name}
+									onChange={this.onNameChange.bind(this)}
+								/>
+							</div>
+							<div className="form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input
+									type="email"
+									className="form-control"
+									id="email"
+									aria-describedby="emailHelp"
+									value={this.state.email}
+									onChange={this.onEmailChange.bind(this)}
+								/>
+							</div>
+							<div className="form-group">
+								<label for="message">Message</label>
+								<textarea
+									className="form-control"
+									rows="5"
+									id="message"
+									value={this.state.message}
+									onChange={this.onMessageChange.bind(this)}
+								></textarea>
+							</div>
+							<button type="submit" className="btn btn-primary">
+								Submit
+							</button>
+						</form>
+					</Col>
+				</Row>
+			</Container>
 		);
 	}
 
@@ -98,7 +110,7 @@ class Contact extends Component {
 			},
 			url: '/send',
 			data: this.state,
-		}).then((response) => {
+		}).then(response => {
 			if (response.status === 200) {
 				alert('Message Sent.');
 			} else if (response.status !== 200) {
