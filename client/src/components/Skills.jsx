@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, CardDeck, Image } from 'react-bootstrap';
 import './Skills.scss';
+import reactBootstrapSvg from '../assets/reactboot.svg';
 
 class Skills extends Component {
 	render() {
@@ -171,7 +172,7 @@ class Skills extends Component {
 													target="_blank"
 												>
 													<img
-														src={require('../assets/reactboot.svg')}
+														src={reactBootstrapSvg}
 														width="50px"
 														alt="React Bootstrap"
 														className="m-1 rounded"
