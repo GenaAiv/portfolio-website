@@ -25,7 +25,7 @@ const Home = () => {
 					<Col lg={6} sm={12} md={6} order={1}>
 						<div className="home-info">
 							<h1>
-								Gena <strong>Aivazian</strong>
+								FEDE<strong>FEDE</strong>
 							</h1>
 							<h2 className="">
 								Junior <strong>Developer</strong>
