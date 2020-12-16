@@ -46,7 +46,7 @@ class Contact extends Component {
 							method="POST"
 						>
 							<div className="form-group">
-								<label for="name">Name</label>
+								<label htmlFor="name">Name</label>
 								<input
 									type="text"
 									className="form-control"
@@ -56,7 +56,7 @@ class Contact extends Component {
 								/>
 							</div>
 							<div className="form-group">
-								<label for="exampleInputEmail1">Email address</label>
+								<label htmlFor="exampleInputEmail1">Email address</label>
 								<input
 									type="email"
 									className="form-control"
@@ -67,7 +67,7 @@ class Contact extends Component {
 								/>
 							</div>
 							<div className="form-group">
-								<label for="message">Message</label>
+								<label htmlFor="message">Message</label>
 								<textarea
 									className="form-control"
 									rows="5"
