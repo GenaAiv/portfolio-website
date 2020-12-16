@@ -82,7 +82,7 @@ class ProjectCard extends Component {
 							<Card.Img
 								className="focus"
 								variant="top"
-								src={require('../assets/underdev.png')}
+								src={require('../assets/botlist.png')}
 							/>
 							<Card.Body className="">
 								<Card.Title>Bot List Table</Card.Title>
@@ -91,7 +91,7 @@ class ProjectCard extends Component {
 									<Button href="https://genaaiv.dev/botlist" variant="primary" target="_blank">
 										Visit the page
 									</Button>
-									<Button href="https://github.com/GenaAiv/BotList" variant="primary" target="_blank" disabled>
+									<Button href="https://github.com/GenaAiv/BotList" variant="primary" target="_blank">
 										Visit GitHub
 									</Button>
 								</div>
