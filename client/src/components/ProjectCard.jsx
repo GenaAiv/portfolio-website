@@ -27,16 +27,14 @@ class ProjectCard extends Component {
 								<Card.Text>Check the weather in your city</Card.Text>
 								<div className="button-div">
 									<Button
-										href="https://check-your-weather.herokuapp.com/"
+										href="https://genaaiv.dev/weather/"
 										variant="primary"
-										target="_blank"
 									>
 										Visit the page
 									</Button>
 									<Button
 										href="https://github.com/GenaAiv/weather-app"
 										variant="primary"
-										target="_blank"
 									>
 										Visit GitHub
 									</Button>
@@ -61,16 +59,14 @@ class ProjectCard extends Component {
 								<Card.Text>A simple What to do List</Card.Text>
 								<div className="button-div">
 									<Button
-										href="https://focused-lewin-e18a11.netlify.app/"
+										href="https://genaaiv.dev/todolist"
 										variant="primary"
-										target="_blank"
 									>
 										Visit the page
 									</Button>
 									<Button
 										href="https://github.com/GenaAiv/to-do"
 										variant="primary"
-										target="_blank"
 									>
 										Visit GitHub
 									</Button>
@@ -89,13 +85,13 @@ class ProjectCard extends Component {
 								src={require('../assets/underdev.png')}
 							/>
 							<Card.Body className="">
-								<Card.Title>Support your local Artist</Card.Title>
-								<Card.Text>Under development...</Card.Text>
+								<Card.Title>Bot List Table</Card.Title>
+								<Card.Text>Dynamic Table I made for a friend</Card.Text>
 								<div className="button-div">
-									<Button href="#" variant="primary" target="_blank" disabled>
+									<Button href="https://genaaiv.dev/botlist" variant="primary" target="_blank">
 										Visit the page
 									</Button>
-									<Button href="#" variant="primary" target="_blank" disabled>
+									<Button href="https://github.com/GenaAiv/BotList" variant="primary" target="_blank" disabled>
 										Visit GitHub
 									</Button>
 								</div>

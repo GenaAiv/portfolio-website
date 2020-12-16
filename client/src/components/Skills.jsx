@@ -21,7 +21,7 @@ class Skills extends Component {
 											Programming Languages
 										</div>
 										<hr></hr>
-										<p className="d-flex justify-content-start flex-column">
+										<div className="d-flex justify-content-start flex-column">
 											<span className="p-2 focus-in">
 												<a
 													className="text-decoration-none"
@@ -71,7 +71,7 @@ class Skills extends Component {
 													Redux
 												</a>
 											</span>
-										</p>
+										</div>
 									</div>
 								</div>
 
@@ -79,7 +79,7 @@ class Skills extends Component {
 									<div className="card-body">
 										<div className="text-center card-title h5">IDE</div>
 										<hr></hr>
-										<p className="d-flex justify-content-start flex-column">
+										<div className="d-flex justify-content-start flex-column">
 											<span className="p-2 focus-in">
 												<a
 													className="text-decoration-none"
@@ -94,7 +94,7 @@ class Skills extends Component {
 													Visual Studio Code
 												</a>
 											</span>
-										</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -104,7 +104,7 @@ class Skills extends Component {
 									<div className="card-body">
 										<div className="text-center card-title h5">Front End</div>
 										<hr></hr>
-										<p className="d-flex justify-content-start flex-column">
+										<div className="d-flex justify-content-start flex-column">
 											<span className="p-2 focus-in">
 												<a
 													className="text-decoration-none"
@@ -179,14 +179,14 @@ class Skills extends Component {
 													React Bootstrap
 												</a>
 											</span>
-										</p>
+										</div>
 									</div>
 								</div>
 								<div className="focus mt-2 mb-2 card">
 									<div className="card-body">
 										<div className="text-center card-title h5">Back End</div>
 										<hr></hr>
-										<p className="d-flex justify-content-start flex-column">
+										<div className="d-flex justify-content-start flex-column">
 											<span className="p-2 focus-in">
 												<a
 													className="text-decoration-none"
@@ -215,7 +215,7 @@ class Skills extends Component {
 													Node.Js
 												</a>
 											</span>
-										</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -225,7 +225,7 @@ class Skills extends Component {
 									<div className="card-body">
 										<div className="text-center card-title h5">Database</div>
 										<hr></hr>
-										<p className="card-text d-flex justify-content-start flex-column card-text">
+										<div className="card-text d-flex justify-content-start flex-column card-text">
 											<span className="p-2 focus-in">
 												<a
 													className="text-decoration-none"
@@ -254,7 +254,7 @@ class Skills extends Component {
 													MongoDB
 												</a>
 											</span>
-										</p>
+										</div>
 									</div>
 								</div>
 
@@ -264,7 +264,7 @@ class Skills extends Component {
 											Version Control
 										</div>
 										<hr></hr>
-										<p className="card-text d-flex justify-content-start flex-column card-text">
+										<div className="card-text d-flex justify-content-start flex-column card-text">
 											<span className="p-2 focus-in">
 												<a
 													className="text-decoration-none"
@@ -279,7 +279,7 @@ class Skills extends Component {
 													GIT
 												</a>
 											</span>
-										</p>
+										</div>
 									</div>
 								</div>
 
@@ -289,7 +289,7 @@ class Skills extends Component {
 											Hosting Platform
 										</div>
 										<hr></hr>
-										<p className="card-text d-flex justify-content-start flex-column card-text">
+										<div className="card-text d-flex justify-content-start flex-column card-text">
 											<span className="p-2 focus-in">
 												<a
 													className="text-decoration-none"
@@ -318,7 +318,7 @@ class Skills extends Component {
 													Heroku
 												</a>
 											</span>
-										</p>
+										</div>
 									</div>
 								</div>
 							</div>

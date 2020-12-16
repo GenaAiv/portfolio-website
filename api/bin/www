@@ -17,19 +17,8 @@ const fs = require('fs');
 let port = normalizePort(process.env.PORT || "8080");
 app.set("port", port);
 
-/**
- * Create HTTPs server.
- */
-/*const privateKey = fs.readFileSync("/home/ubuntu/cert/genaaiv_privkey.key");
-const certificate = fs.readFileSync("/home/ubuntu/cert/genaaiv_dev.crt");
 
-
-const credentials = {
-  key: privateKey,
-  cert: certificate,
-  passphrase: "abc123"
-};*/
-let server = http.createServer(/*credentials, */app);
+let server = http.createServer(app);
 
 
 
