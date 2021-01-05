@@ -36,6 +36,23 @@ class Skills extends Component {
 													JavaScript
 												</a>
 											</span>
+
+											<span className="p-2 focus-in">
+												<a
+													className="text-decoration-none"
+													href="https://php.net/"
+													target="_blank"
+												>
+													<Image
+														src={require('../assets/php.png')}
+														alt="PHP"
+														className="m-1 rounded"
+													/>
+													PHP
+												</a>
+											</span>
+
+
 											<hr></hr>
 											<hr></hr>
 											<div className="text-center card-title h5">
@@ -215,6 +232,20 @@ class Skills extends Component {
 													Node.Js
 												</a>
 											</span>
+											<span className="p-2 focus-in">
+												<a
+													className="text-decoration-none"
+													href="https://laravel.com/"
+													target="_blank"
+												>
+													<img
+														src={require('../assets/laravel.png')}
+														alt="Laravel"
+														className="m-1 rounded"
+													/>
+													Laravel
+												</a>
+											</span>
 										</div>
 									</div>
 								</div>
@@ -252,6 +283,20 @@ class Skills extends Component {
 														className="m-1 rounded"
 													/>
 													MongoDB
+												</a>
+											</span>
+											<span className="p-2 focus-in">
+												<a
+													className="text-decoration-none"
+													href="https://www.phpmyadmin.net/"
+													target="_blank"
+												>
+													<img
+														src={require('../assets/phpmyadmin.png')}
+														alt="PHP My Admin"
+														className="m-1 rounded"
+													/>
+													PHPMyAdmin
 												</a>
 											</span>
 										</div>

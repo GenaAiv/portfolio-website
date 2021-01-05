@@ -58,7 +58,6 @@ router.post('/', (req, res, next) => {
 	const name = req.body.name;
 	const email = req.body.email;
 	const message = req.body.message;
-	console.log(req.body);
 	const content = `name: ${name} \n email: ${email} \n message: ${message}`;
 	const mail = {
 		from: name,
